@@ -15,6 +15,8 @@
             filterMeniu.RadioButtonRecentActivity.Click();
             filterMeniu.FilterMeniuTextBox.SendKeys("javascript");
             filterMeniu.FilterMeniuButton.Click();
+
+            Driver.driver.Quit();
         }
     }
 }
