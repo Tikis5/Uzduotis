@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Uzduotis_FlowForma
+namespace StackOverflow
 {
-    public class TabsMeniu
+    public class TabsMenu
     {
-        public TabsMeniu()
+        public TabsMenu()
         {
             PageFactory.InitElements(Driver.driver, this);
         }

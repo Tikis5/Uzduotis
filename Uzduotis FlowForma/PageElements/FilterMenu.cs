@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Uzduotis_FlowForma
+namespace StackOverflow
 {
-    public class FilterMeniu
+    public class FilterMenu
     {
-        public FilterMeniu()
+        public FilterMenu()
         {
             PageFactory.InitElements(Driver.driver, this);
         }
@@ -20,9 +20,9 @@ namespace Uzduotis_FlowForma
         public IWebElement RadioButtonRecentActivity { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#uql-form > div > div > div.px12.py16 > div > div:nth-child(3) > div > div > input")]
-        public IWebElement FilterMeniuTextBox { get; set; }
+        public IWebElement FilterMenuTextBox { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#uql-form > div > div > div.p12.bt.bc-black-3 > div > div.grid.gs4.gsx.fl1 > button")]
-        public IWebElement FilterMeniuButton { get; set; }
+        public IWebElement FilterMenuButton { get; set; }
     }
 }

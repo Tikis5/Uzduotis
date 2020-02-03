@@ -1,4 +1,4 @@
-﻿namespace Uzduotis_FlowForma
+﻿namespace StackOverflow
 {
     public static class Config
     {

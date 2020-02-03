@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
-namespace Uzduotis_FlowForma
+namespace StackOverflow
 {
     public static class Driver
     {

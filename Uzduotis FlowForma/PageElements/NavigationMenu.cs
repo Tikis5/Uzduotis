@@ -1,22 +1,22 @@
 ﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
-namespace Uzduotis_FlowForma
+namespace StackOverflow
 {
-    public class NavigationMeniu
+    public class NavigationMenu
     {
-        public NavigationMeniu()
+        public NavigationMenu()
         {
             PageFactory.InitElements(Driver.driver, this);
         }
 
         [FindsBy(How = How.ClassName, Using = "left-sidebar-toggle")]
-        public IWebElement LeftNavigationMeniu { get; set; }
+        public IWebElement LeftNavigationMenu { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#nav-questions > span")]
-        public IWebElement NavMeniuStackOverflow { get; set; }
+        public IWebElement NavMenuStackOverflow { get; set; }
 
         [FindsBy(How = How.CssSelector, Using = "#nav-tags")]
-        public IWebElement NavMeniuTabs { get; set; }
+        public IWebElement NavMenuTabs { get; set; }
     }
 }
