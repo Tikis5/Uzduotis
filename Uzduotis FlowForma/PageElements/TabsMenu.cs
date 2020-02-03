@@ -13,7 +13,7 @@ namespace StackOverflow
         [FindsBy(How = How.Id, Using = "tagfilter")]
         public IWebElement TagFilterTextBox { get; set; }
 
-        [FindsBy(How = How.CssSelector, Using = "#tags-browser > div:nth-child(1) > a")]
+        [FindsBy(How = How.LinkText, Using = "c#")]
         public IWebElement ResultCSharp { get; set; }
     }
 }

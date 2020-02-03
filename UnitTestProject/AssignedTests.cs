@@ -19,8 +19,8 @@ namespace UnitTestProject
             filterMenu.RadioButtonRecentActivity.Click();
             filterMenu.FilterMenuTextBox.SendKeys("javascript");
             filterMenu.FilterMenuButton.Click();
-            //Driver.driver.Quit();
         }
+
         [TestMethod]
         public void SecondTest()
         {
@@ -33,15 +33,15 @@ namespace UnitTestProject
             tabsMenu.TagFilterTextBox.SendKeys("c#");
             tabsMenu.ResultCSharp.Click();
         }
-        [ClassInitialize]
-        public void Initialize() 
+
+        [TestInitialize]
+        public void Initialize()
         {
             Driver.driver.Navigate().GoToUrl(Config.BaseURL);
-            //var navigationMenu = new NavigationMenu();
-            //var tabsMenu = new TabsMenu();
         }
-        [ClassCleanup]
-        public void CleanUp()
+
+        [AssemblyCleanup]
+        public static void CleanUp()
         {
             Driver.driver.Quit();
         }
