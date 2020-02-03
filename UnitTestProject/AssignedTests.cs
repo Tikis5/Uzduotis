@@ -6,6 +6,12 @@ namespace UnitTestProject
     [TestClass]
     public class AssignedTests
     {
+        [TestInitialize]
+        public void Initialize()
+        {
+            Driver.driver.Navigate().GoToUrl(Config.BaseURL);
+        }
+
         [TestMethod]
         public void FirstTest()
         {
@@ -32,12 +38,6 @@ namespace UnitTestProject
             tabsMenu.TagFilterTextBox.Click();
             tabsMenu.TagFilterTextBox.SendKeys("c#");
             tabsMenu.ResultCSharp.Click();
-        }
-
-        [TestInitialize]
-        public void Initialize()
-        {
-            Driver.driver.Navigate().GoToUrl(Config.BaseURL);
         }
 
         [AssemblyCleanup]
